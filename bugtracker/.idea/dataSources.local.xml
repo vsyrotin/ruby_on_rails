@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails bugtracker: development" uuid="38c7d83b-6ce3-4269-ba6d-a82084f8c044">
+      <user-name>root</user-name>
+      <user-password>df93df9cdf9bdf9edf9fdf93df9cdf92df9adf99</user-password>
+      <schema-pattern>bugtracker_development.*</schema-pattern>
+      <default-schemas>bugtracker_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails bugtracker: test" uuid="3ebc5867-05da-4228-a4c0-d2cb79ca332a">
+      <user-name>root</user-name>
+      <user-password>df93df9cdf9bdf9edf9fdf93df9cdf92df9adf99</user-password>
+      <schema-pattern>bugtracker_test.*</schema-pattern>
+      <default-schemas>bugtracker_test.*</default-schemas>
+    </data-source>
+    <data-source name="Rails bugtracker: production" uuid="6a90f342-4799-40dd-b93b-c0c99a5fe995">
+      <user-name>root</user-name>
+      <user-password>df93df9cdf9bdf9edf9fdf93df9cdf92df9adf99</user-password>
+      <schema-pattern>bugtracker_production.*</schema-pattern>
+      <default-schemas>bugtracker_production.*</default-schemas>
+    </data-source>
+  </component>
+</project>

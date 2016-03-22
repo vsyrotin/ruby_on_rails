@@ -1,0 +1,40 @@
+%h1 Listing Tickets
+%header#header
+  %nav.navbar.navbar-default.navbar-static-top{:role => "banner"}
+    .container
+      .navbar-collapse.collapse
+        .menu
+          %ul.nav.nav-tabs{:role => "tablist"}
+            %li{:role => "presentation"}
+            %a= link_to 'Home', root_path
+            %li{:role => "presentation"}
+            %a= link_to 'Add status', new_status_path
+            %li{:role => "presentation"}
+            %a= link_to 'Add user', new_user_path
+            %li{:role => "presentation"}
+            %a= link_to 'Log-out', destroy_user_session_path
+        / /.container
+      / /nav
+      / /header
+  %table
+    %thead
+      %tr
+        %th Id tickets
+        %th Status
+        %th User
+        %th Client email
+        %th Problem
+        %th{:colspan => "3"}
+    %tbody
+      - @tickets.each do |ticket|
+        %tr
+          %th= 'ABC-%s' % ticket.id
+          %td= ticket.status_id.nil? ? 'New unassigned tickets' : ticket.status.status
+          %td= ticket.user_id.nil? ? 'unassigned' : ticket.user.login
+          %td= ticket.email
+          %td= ticket.problem
+          %td= link_to 'Show', ticket
+          %td= link_to 'Edit', edit_ticket_path(ticket)
+          %td= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Ticket', new_ticket_path

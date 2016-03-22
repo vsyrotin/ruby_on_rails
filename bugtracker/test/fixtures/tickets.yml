@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status_id: 1
+  user_id: 1
+  client_id: 1
+  problem: MyString
+
+two:
+  status_id: 1
+  user_id: 1
+  client_id: 1
+  problem: MyString
